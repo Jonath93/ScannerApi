@@ -10,6 +10,7 @@ const PORT = 3000;
 
 // === Servidor WebSocket local ===
 const wss = new WebSocketServer({ port: PORT });
+
 console.log(`🚀 Servidor WebSocket en ws://localhost:${PORT}`);
 
 wss.on("connection", (client) => {
